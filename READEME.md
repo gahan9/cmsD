@@ -1,1 +1,0 @@
-#Django CMS first project
