@@ -15,6 +15,8 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^contact/', include('contact_form.urls')),
+
 ]
 
 urlpatterns += i18n_patterns(
