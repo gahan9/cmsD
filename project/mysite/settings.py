@@ -149,7 +149,8 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'mysite',
-    'contact_form'
+    'polls',
+    'first_cms',
 )
 
 LANGUAGES = (
@@ -185,6 +186,8 @@ CMS_TEMPLATES = (
 CMS_PERMISSION = True
 
 CMS_PLACEHOLDER_CONF = {}
+
+FORM_CLASSES = (('django.contrib.auth.forms.AuthenticationForm', 'Login Form'),)
 
 DATABASES = {
     'default': {
